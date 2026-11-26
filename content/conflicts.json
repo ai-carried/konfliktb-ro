@@ -1,0 +1,488 @@
+{
+  "_info": "Konfliktfälle. Kapitel-Zuordnung über content/chapters.json. 'conflict_01' (Lena) stammt aus konfliktspiel_anforderungen.md (Abschnitt 8); alle anderen Fälle sind von Claude ergänzt (Feld _review). Die Reihenfolge der Antworten wird im Spiel gemischt.",
+  "conflicts": [
+    {
+      "id": "c1_1",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "marco", "name": "Marco", "role": "Backend-Entwickler" },
+      "situation": "Seit dem letzten Sprint-Review schweigt Marco in Meetings, kommt knapp zu spät und antwortet im Team-Chat nur noch mit „ok“. Früher war er einer der Aktivsten.",
+      "options": [
+        { "text": "Das ist seine Sache. Solange die Arbeit erledigt wird, mische ich mich nicht ein.", "consequence": "Die Signale werden stärker. Zwei Wochen später platzt Marco im Meeting der Kragen – jetzt ist der Konflikt deutlich schwerer zu lösen.", "correct": false },
+        { "text": "Ich spreche Marco im nächsten Meeting vor allen darauf an.", "consequence": "Marco fühlt sich bloßgestellt und blockt ab. Das Team ist verunsichert.", "correct": false },
+        { "text": "Ich suche ein ruhiges Einzelgespräch und schildere ohne Vorwurf, was ich beobachtet habe.", "consequence": "Marco erzählt, dass seine Idee im Review einfach übergangen wurde. Der Konflikt ist früh erkannt und kann besprochen werden.", "correct": true }
+      ],
+      "theory": {
+        "model": "Konfliktsignale erkennen",
+        "summary": "Konflikte kündigen sich oft durch Veränderungen im Verhalten an: Rückzug, Schweigen, Gereiztheit, Unpünktlichkeit, knappe Kommunikation oder Gerüchte. Wer solche Signale früh und ohne Vorwurf anspricht, kann Konflikte lösen, bevor sie eskalieren.",
+        "example": "Marcos Schweigen und die knappen Antworten sind kein Zufall, sondern Signale für einen verdeckten Konflikt."
+      },
+      "checkpoints": [
+        {
+          "question": "Welches Verhalten ist ein typisches frühes Konfliktsignal?",
+          "answers": ["Eine Person zieht sich auffällig aus Diskussionen zurück.", "Das Team feiert einen erreichten Meilenstein.", "Eine Kollegin fragt nach einer Vorlage."],
+          "correct_index": 0,
+          "explanation": "Auffälliger Rückzug ist eine typische Verhaltensänderung, die auf einen verdeckten Konflikt hinweisen kann."
+        }
+      ]
+    },
+    {
+      "id": "c1_2",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "sara", "name": "Sara", "role": "UX-Designerin" },
+      "situation": "Sara und Tim streiten, ob die neue App zuerst als Web- oder als Mobile-Version erscheinen soll. Beide bringen Argumente und Zahlen mit, die Diskussion dreht sich im Kreis.",
+      "options": [
+        { "text": "Ich entscheide spontan für die Web-Version, damit endlich Ruhe ist.", "consequence": "Der Streit ist beendet, aber Saras Argumente wurden nie geprüft. Sie fühlt sich übergangen und zweifelt an der Entscheidung.", "correct": false },
+        { "text": "Ich lasse beide ihre Kriterien offenlegen, und wir vergleichen die Daten gemeinsam.", "consequence": "Die Nutzerdaten sprechen klar für Mobile. Beide tragen die Entscheidung mit – und das Ergebnis ist besser als jeder Einzelvorschlag.", "correct": true },
+        { "text": "Ich sage, sie sollen das unter sich ausmachen.", "consequence": "Die Diskussion zieht sich über Wochen, der Zeitplan rutscht.", "correct": false }
+      ],
+      "theory": {
+        "model": "Sachkonflikt",
+        "summary": "Bei einem Sachkonflikt geht es um unterschiedliche Meinungen zu Inhalten, Methoden oder Lösungen. Er lässt sich meist mit Fakten, Kriterien und offener Diskussion lösen und kann sogar zu besseren Ergebnissen führen.",
+        "example": "„Web oder Mobile?“ ist eine Sachfrage. Nutzerdaten und Projektziele helfen bei der Entscheidung."
+      },
+      "checkpoints": [
+        {
+          "question": "Woran erkennst du einen Sachkonflikt?",
+          "answers": ["Es geht um verschiedene Meinungen zu einer Lösung oder Methode.", "Zwei Personen können sich nicht leiden.", "Niemand weiß, wer wofür zuständig ist."],
+          "correct_index": 0,
+          "explanation": "Ein Sachkonflikt dreht sich um Inhalte. Antipathie wäre ein Beziehungskonflikt, unklare Zuständigkeit ein Rollenkonflikt."
+        }
+      ]
+    },
+    {
+      "id": "c1_3",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "jonas", "name": "Jonas", "role": "Software-Tester" },
+      "situation": "Jonas sagt: „Mit Petra kann man nicht arbeiten. Egal was ich vorschlage, sie findet es schlecht.“ Im letzten Meeting fielen spitze Bemerkungen zwischen den beiden.",
+      "options": [
+        { "text": "Ich prüfe nur, welcher Vorschlag fachlich besser war.", "consequence": "Die Sachfrage ist geklärt, doch die Spannung bleibt. Beim nächsten Thema geht der Streit von vorne los.", "correct": false },
+        { "text": "Ich biete ein moderiertes Gespräch an, in dem beide schildern, wie sie die Zusammenarbeit erleben.", "consequence": "Petra erzählt, dass sie sich von Jonas oft unterbrochen fühlt. Beide vereinbaren Gesprächsregeln – die Stimmung entspannt sich.", "correct": true },
+        { "text": "Ich teile die beiden auf verschiedene Arbeitspakete auf.", "consequence": "Kurzfristig ist es ruhiger. Doch bei der Integration müssen sie wieder zusammenarbeiten, und der Konflikt ist noch da.", "correct": false }
+      ],
+      "theory": {
+        "model": "Beziehungskonflikt",
+        "summary": "Bei einem Beziehungskonflikt stehen Gefühle, Wahrnehmungen und das Verhältnis der Personen im Mittelpunkt, zum Beispiel fehlende Wertschätzung oder Misstrauen. Sachargumente allein lösen ihn nicht – die Beziehungsebene muss angesprochen werden.",
+        "example": "Jonas' Vorschläge sind nicht das eigentliche Problem. Er fühlt sich von Petra abgewertet, sie sich von ihm übergangen."
+      },
+      "checkpoints": [
+        {
+          "question": "Was hilft bei einem Beziehungskonflikt am meisten?",
+          "answers": ["Eine noch genauere fachliche Analyse", "Ein Gespräch über die gegenseitige Wahrnehmung und Erwartungen", "Eine schriftliche Anweisung der Projektleitung"],
+          "correct_index": 1,
+          "explanation": "Beziehungskonflikte werden auf der Beziehungsebene gelöst: Beide Seiten schildern, wie sie die Situation erleben, und vereinbaren, was sie brauchen."
+        }
+      ]
+    },
+    {
+      "id": "c1_4",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "aylin", "name": "Aylin", "role": "Business Analystin" },
+      "situation": "Aylin und Ben schreiben beide an den Anforderungen für das neue Modul. Jeder hält es für seine Aufgabe, und keiner weiß, wer am Ende entscheidet. Die Stimmung kippt.",
+      "options": [
+        { "text": "Ich lasse beide weitermachen. Doppelt hält besser.", "consequence": "Es entstehen zwei widersprüchliche Dokumente. Der Ärger wächst, und wertvolle Zeit geht verloren.", "correct": false },
+        { "text": "Wir klären gemeinsam Rollen und Verantwortlichkeiten, zum Beispiel mit einer RACI-Matrix.", "consequence": "Aylin verantwortet die Anforderungen, Ben wird bei technischen Fragen konsultiert. Die Doppelarbeit endet.", "correct": true },
+        { "text": "Ich nehme Ben die Aufgabe ohne Erklärung weg.", "consequence": "Ben fühlt sich übergangen und macht nur noch Dienst nach Vorschrift.", "correct": false }
+      ],
+      "theory": {
+        "model": "Rollenkonflikt",
+        "summary": "Ein Rollenkonflikt entsteht, wenn Aufgaben, Kompetenzen oder Erwartungen an eine Rolle unklar oder widersprüchlich sind. Klare Rollenbeschreibungen und Verantwortlichkeiten (z. B. eine RACI-Matrix: Responsible, Accountable, Consulted, Informed) beugen vor.",
+        "example": "Aylin und Ben streiten nicht über Inhalte, sondern über die unklare Frage, wer zuständig ist."
+      },
+      "checkpoints": [
+        {
+          "question": "Was ist die Hauptursache eines Rollenkonflikts?",
+          "answers": ["Ein technischer Fehler im Code", "Zu viele Meetings", "Unklare Aufgaben und Zuständigkeiten"],
+          "correct_index": 2,
+          "explanation": "Rollenkonflikte entstehen aus unklaren oder widersprüchlichen Erwartungen an Rollen, Aufgaben und Kompetenzen."
+        }
+      ]
+    },
+
+    {
+      "id": "c2_1",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "nina", "name": "Nina", "role": "Frontend-Entwicklerin" },
+      "situation": "Im Daily prallen Nina und David bei der Aufwandschätzung immer wieder aufeinander. Die Standpunkte verhärten sich, die Diskussionen werden lauter, jeder will das letzte Wort haben.",
+      "options": [
+        { "text": "Ich warte ab. Das ist normaler Austausch im Team.", "consequence": "Aus der Debatte wird Polemik. David stellt Nina im Review als unfähig dar – der Konflikt steigt eine Stufe höher.", "correct": false },
+        { "text": "Ich moderiere eine kurze Klärung: Beide begründen ihre Schätzung, das Team entscheidet nach gemeinsamen Kriterien.", "consequence": "Die Spannungen lassen nach. In dieser frühen Phase reicht oft eine gute Moderation.", "correct": true },
+        { "text": "Ich hole sofort einen externen Mediator.", "consequence": "Beide finden das übertrieben. Der Mediator kostet Zeit und Geld für ein Problem, das das Team selbst lösen könnte.", "correct": false }
+      ],
+      "theory": {
+        "model": "Glasl: Ebene 1 (Stufen 1–3)",
+        "summary": "Friedrich Glasl beschreibt 9 Eskalationsstufen in 3 Ebenen. Auf Ebene 1 – Stufe 1 Verhärtung, Stufe 2 Debatte und Polemik, Stufe 3 Taten statt Worte – ist eine Win-win-Lösung noch möglich. Die Parteien können den Konflikt meist selbst oder mit einer Moderation lösen.",
+        "example": "Nina und David stehen zwischen Stufe 1 und 2: Die Standpunkte verhärten sich, es wird polemisch, aber sie reden noch miteinander."
+      },
+      "checkpoints": [
+        {
+          "question": "Was kennzeichnet die erste Ebene (Stufen 1–3) nach Glasl?",
+          "answers": ["Die Parteien wollen sich gegenseitig vernichten.", "Eine Win-win-Lösung ist noch möglich.", "Nur noch ein Machteingriff hilft."],
+          "correct_index": 1,
+          "explanation": "Auf Ebene 1 geht es noch um die Sache, beide Seiten können gewinnen. Selbsthilfe oder Moderation reichen meist aus."
+        }
+      ]
+    },
+    {
+      "id": "c2_2",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "felix", "name": "Felix", "role": "DevOps-Engineer" },
+      "situation": "Die Diskussion über den neuen Deployment-Prozess blieb ergebnislos. Darauf hat Felix die Pipeline einfach nach seinem Konzept umgebaut – ohne Absprache. Das Team ist empört.",
+      "options": [
+        { "text": "Ich baue die Pipeline heimlich wieder zurück.", "consequence": "Jetzt handeln beide Seiten, ohne zu reden. Das Misstrauen wächst, der Konflikt eskaliert weiter.", "correct": false },
+        { "text": "Ich spreche Felix an, mache die Wirkung seiner Aktion deutlich und bringe das Team wieder an einen Tisch.", "consequence": "Felix erklärt, dass ihn die endlosen Diskussionen frustriert haben. Das Team vereinbart einen klaren Entscheidungsprozess.", "correct": true },
+        { "text": "Ich lobe Felix für seine Initiative.", "consequence": "Das Team fühlt sich übergangen. Andere beginnen ebenfalls, eigenmächtig zu handeln.", "correct": false }
+      ],
+      "theory": {
+        "model": "Glasl Stufe 3: Taten statt Worte",
+        "summary": "Auf Stufe 3 glauben die Parteien, dass Reden nichts mehr bringt, und schaffen vollendete Tatsachen. Die Empathie nimmt ab, Missverständnisse nehmen zu. Jetzt ist es wichtig, das Gespräch wieder aufzunehmen, bevor die Schwelle zu Ebene 2 überschritten wird.",
+        "example": "Felix baut die Pipeline um, statt weiter zu diskutieren – ein typisches „Taten statt Worte“."
+      },
+      "checkpoints": [
+        {
+          "question": "Jemand setzt eigenmächtig eine umstrittene Lösung um, weil „Reden ja nichts bringt“. Welche Stufe ist das?",
+          "answers": ["Stufe 1: Verhärtung", "Stufe 9: Gemeinsam in den Abgrund", "Stufe 3: Taten statt Worte"],
+          "correct_index": 2,
+          "explanation": "Vollendete Tatsachen statt Gespräche sind das Kennzeichen von Stufe 3."
+        }
+      ]
+    },
+    {
+      "id": "c2_3",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "lisa", "name": "Lisa", "role": "Projektmitarbeiterin" },
+      "situation": "Lisa erzählt: Das Team hat sich in zwei Lager gespalten. Jede Seite sucht Verbündete, und gestern wurde ein Fehler von Tom absichtlich vor der ganzen Abteilung bloßgestellt.",
+      "options": [
+        { "text": "Ich schlage mich auf die Seite, die im Recht ist.", "consequence": "Das andere Lager fühlt sich bestätigt, dass alle gegen sie sind. Die Fronten verhärten sich weiter.", "correct": false },
+        { "text": "Ich schlage eine Mediation mit einer neutralen Person vor.", "consequence": "In der Mediation sprechen beide Lager über Verletzungen und Bedürfnisse. Langsam entsteht wieder Vertrauen.", "correct": true },
+        { "text": "Ich ermahne alle per E-Mail, sich professionell zu verhalten.", "consequence": "Die E-Mail wird belächelt. Der Konflikt geht im Verborgenen weiter.", "correct": false }
+      ],
+      "theory": {
+        "model": "Glasl: Ebene 2 (Stufen 4–6)",
+        "summary": "Auf Ebene 2 geht es ums Gewinnen und Verlieren (win-lose): Stufe 4 Images und Koalitionen, Stufe 5 Gesichtsverlust, Stufe 6 Drohstrategien. Allein schaffen es die Parteien kaum noch; eine neutrale dritte Partei, z. B. eine Mediation, ist sinnvoll.",
+        "example": "Lagerbildung (Stufe 4) und öffentliches Bloßstellen (Stufe 5) zeigen: Das Team braucht Hilfe von außen."
+      },
+      "checkpoints": [
+        {
+          "question": "Welche Unterstützung ist auf Ebene 2 (Stufen 4–6) in der Regel angemessen?",
+          "answers": ["Eine neutrale dritte Partei, z. B. Mediation", "Keine, der Konflikt löst sich von selbst", "Sofortige Kündigung aller Beteiligten"],
+          "correct_index": 0,
+          "explanation": "Ab Ebene 2 fehlt meist das Vertrauen für eine direkte Klärung. Eine neutrale Person hilft, wieder ins Gespräch zu kommen."
+        }
+      ]
+    },
+    {
+      "id": "c2_4",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "daniel", "name": "Daniel", "role": "Teamleiter der Partnerfirma" },
+      "situation": "Daniel droht: „Wenn ihr die Schnittstelle nicht bis Freitag liefert, ziehen wir unsere Leute ab und melden das eurer Geschäftsleitung.“ Dein Team antwortet mit einer Gegendrohung.",
+      "options": [
+        { "text": "Ich drohe zurück: Dann bezahlen wir auch eure Rechnungen nicht.", "consequence": "Die Drohspirale dreht sich weiter. Bald beginnen beide Seiten, sich gezielt zu schaden.", "correct": false },
+        { "text": "Ich nehme Tempo raus und schlage vor, die Auftraggeber beider Firmen einzubeziehen und eine verbindliche Lösung zu vereinbaren.", "consequence": "Die Drohungen werden gestoppt. Mit Unterstützung der Auftraggeber entsteht ein verbindlicher Plan.", "correct": true },
+        { "text": "Ich ignoriere die Drohung.", "consequence": "Daniel macht die Drohung wahr. Das Projekt verliert zwei Wochen.", "correct": false }
+      ],
+      "theory": {
+        "model": "Glasl: Stufe 6 und Ebene 3 (Stufen 7–9)",
+        "summary": "Auf Stufe 6 setzen die Parteien Drohungen ein, um Druck zu erzeugen. Ab Stufe 7 (Ebene 3, lose-lose) nehmen sie eigenen Schaden in Kauf, wenn nur der Gegner mehr verliert: 7 Begrenzte Vernichtungsschläge, 8 Zersplitterung, 9 Gemeinsam in den Abgrund. Hier helfen oft nur noch ein Schiedsverfahren oder ein Machteingriff von oben.",
+        "example": "Drohung und Gegendrohung zeigen Stufe 6. Ohne Eingreifen droht der Übergang in Ebene 3."
+      },
+      "checkpoints": [
+        {
+          "question": "Was ist typisch für die dritte Ebene (Stufen 7–9)?",
+          "answers": ["Beide Seiten suchen eine Win-win-Lösung.", "Beide Seiten nehmen eigenen Schaden in Kauf (lose-lose).", "Der Konflikt ist noch kaum sichtbar."],
+          "correct_index": 1,
+          "explanation": "Auf Ebene 3 geht es nur noch darum, dem Gegner zu schaden – auch auf eigene Kosten. Am Ende verlieren alle."
+        }
+      ]
+    },
+
+    {
+      "id": "c3_1",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "kevin", "name": "Kevin", "role": "Entwickler" },
+      "situation": "Zwei Stunden vor dem Go-live entdeckt das Team eine Sicherheitslücke. Kevin will trotzdem live gehen: „Der Kunde wartet, das fixen wir nächste Woche!“",
+      "options": [
+        { "text": "Ich setze mich klar durch: Ohne Fix gibt es keinen Go-live.", "consequence": "Der Go-live wird verschoben, die Lücke geschlossen. Kevin ist verärgert, aber ein großer Schaden ist verhindert.", "correct": true },
+        { "text": "Wir treffen uns in der Mitte: Wir gehen live, aber nur mit der Hälfte der Funktionen.", "consequence": "Auch eine halbe Version enthält die Lücke. Das Risiko bleibt bestehen.", "correct": false },
+        { "text": "Ich gebe nach – Kevin hat ja mehr Erfahrung.", "consequence": "Am nächsten Tag wird die Lücke ausgenutzt. Kundendaten sind betroffen.", "correct": false }
+      ],
+      "theory": {
+        "model": "Thomas-Kilmann: Konkurrieren",
+        "summary": "Das Thomas-Kilmann-Modell ordnet fünf Konfliktstile nach zwei Dimensionen: Durchsetzung (eigene Anliegen) und Kooperation (Anliegen der anderen). Konkurrieren bedeutet hohe Durchsetzung und wenig Kooperation. Es passt, wenn schnell entschieden werden muss oder wichtige Werte wie Sicherheit auf dem Spiel stehen.",
+        "example": "Bei einer Sicherheitslücke kurz vor dem Go-live ist eine klare, durchgesetzte Entscheidung richtig."
+      },
+      "checkpoints": [
+        {
+          "question": "Wann ist der Stil „Konkurrieren“ angemessen?",
+          "answers": ["Bei jeder Meinungsverschiedenheit im Team", "Wenn das Thema einem selbst unwichtig ist", "Bei einer dringenden Entscheidung mit hohem Risiko"],
+          "correct_index": 2,
+          "explanation": "Konkurrieren ist sinnvoll, wenn schnell gehandelt werden muss oder viel auf dem Spiel steht. Als Dauerstil schadet er der Zusammenarbeit."
+        }
+      ]
+    },
+    {
+      "id": "c3_2",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "mia", "name": "Mia", "role": "Product Owner" },
+      "situation": "Mia will im nächsten Quartal neue Features, das Entwicklungsteam will zuerst technische Altlasten abbauen. Beide Anliegen sind wichtig, und es bleiben noch drei Wochen bis zur Planung.",
+      "options": [
+        { "text": "Features gehen vor, der Kunde bezahlt schließlich.", "consequence": "Das Team fühlt sich nicht ernst genommen. Die Altlasten bremsen die neuen Features immer stärker aus.", "correct": false },
+        { "text": "Wir suchen gemeinsam eine Lösung, die beide Ziele verbindet – z. B. Altlasten genau dort abbauen, wo neue Features entstehen.", "consequence": "Beide Seiten bekommen, was ihnen wichtig ist. Die neuen Features sind sogar schneller fertig als geplant.", "correct": true },
+        { "text": "Wir teilen jeden Sprint fix auf: 50 % Features, 50 % Altlasten.", "consequence": "Das funktioniert halbwegs, aber beide Seiten sind nur teilweise zufrieden. Eine bessere Lösung wurde gar nicht erst gesucht.", "correct": false }
+      ],
+      "theory": {
+        "model": "Thomas-Kilmann: Zusammenarbeiten",
+        "summary": "Zusammenarbeiten bedeutet hohe Durchsetzung und hohe Kooperation. Beide Seiten suchen gemeinsam eine Lösung, die alle Anliegen möglichst voll erfüllt (win-win). Das braucht Zeit und Vertrauen, lohnt sich aber bei wichtigen Themen und langfristiger Zusammenarbeit.",
+        "example": "Mia und das Team haben Zeit und beide wichtige Anliegen – ideale Bedingungen für Zusammenarbeit statt Kompromiss."
+      },
+      "checkpoints": [
+        {
+          "question": "Was unterscheidet Zusammenarbeiten vom Kompromiss?",
+          "answers": ["Es gibt keinen Unterschied.", "Beim Zusammenarbeiten werden die Anliegen beider Seiten möglichst voll erfüllt, beim Kompromiss gibt jede Seite etwas auf.", "Beim Kompromiss gewinnt immer eine Seite."],
+          "correct_index": 1,
+          "explanation": "Der Kompromiss teilt den „Kuchen“, das Zusammenarbeiten versucht, ihn zu vergrößern."
+        }
+      ]
+    },
+    {
+      "id": "c3_3",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "eva", "name": "Eva", "role": "Datenbank-Expertin" },
+      "situation": "Eva seufzt: „Paul und Rahel wollen mich beide für die nächsten zwei Wochen. Beide Teilprojekte haben wichtige Termine. Ich kann mich nicht zerteilen.“ Es gibt keine weitere Expertin.",
+      "options": [
+        { "text": "Eva arbeitet abwechselnd für beide; jedes Teilprojekt priorisiert seine wichtigsten Aufgaben.", "consequence": "Beide Teilprojekte kommen voran, wenn auch langsamer. Bei Zeitdruck und gleich wichtigen Ansprüchen ist das eine faire Lösung.", "correct": true },
+        { "text": "Wer zuerst gefragt hat, bekommt Eva.", "consequence": "Rahels Teilprojekt steht still. Sie fühlt sich unfair behandelt.", "correct": false },
+        { "text": "Ich halte mich raus, das sollen die beiden klären.", "consequence": "Eva wird zwischen beiden aufgerieben und ist bald völlig überlastet.", "correct": false }
+      ],
+      "theory": {
+        "model": "Thomas-Kilmann: Kompromiss",
+        "summary": "Beim Kompromiss sind Durchsetzung und Kooperation mittel ausgeprägt. Jede Seite gibt etwas auf, damit schnell eine faire Lösung entsteht. Er passt bei Zeitdruck, gleich starken Parteien oder wenn Zusammenarbeit zu aufwändig wäre.",
+        "example": "Evas Zeit lässt sich nicht vermehren. Eine faire Aufteilung ist hier die realistischste Lösung."
+      },
+      "checkpoints": [
+        {
+          "question": "In welcher Situation passt ein Kompromiss am besten?",
+          "answers": ["Eine Sicherheitslücke muss sofort geschlossen werden.", "Zwei gleich wichtige Ansprüche, wenig Zeit und keine perfekte Lösung in Sicht", "Das Thema ist völlig unwichtig."],
+          "correct_index": 1,
+          "explanation": "Ein Kompromiss ist sinnvoll, wenn schnell eine faire Lösung gebraucht wird und keine Seite allein gewinnen soll."
+        }
+      ]
+    },
+    {
+      "id": "c3_4",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "leon", "name": "Leon", "role": "Werkstudent" },
+      "situation": "Leon und Sophie diskutieren hitzig, welche Farbe die Icons im internen Testtool bekommen sollen. Das Tool wird nur zwei Wochen genutzt. Gleichzeitig steht morgen ein wichtiger Release an.",
+      "options": [
+        { "text": "Ich steige in eine ausführliche Grundsatzdiskussion ein.", "consequence": "Eine Stunde später ist die Farbe gewählt – und der Release verzögert sich.", "correct": false },
+        { "text": "Ich vertage das Thema bewusst: „Das klären wir nach dem Release.“", "consequence": "Alle konzentrieren sich auf den Release. Danach interessiert die Icon-Farbe niemanden mehr.", "correct": true },
+        { "text": "Ich entscheide per Machtwort für Blau.", "consequence": "Sophie ist verstimmt. Wegen einer Kleinigkeit hast du Vertrauen verspielt.", "correct": false }
+      ],
+      "theory": {
+        "model": "Thomas-Kilmann: Vermeiden und Entgegenkommen",
+        "summary": "Vermeiden heißt wenig Durchsetzung und wenig Kooperation: Das Thema wird bewusst (vorerst) nicht bearbeitet – sinnvoll bei unwichtigen Themen oder wenn sich die Gemüter erst beruhigen müssen. Entgegenkommen heißt wenig Durchsetzung und hohe Kooperation: Man stellt die eigenen Anliegen zurück, z. B. wenn das Thema der anderen Seite viel wichtiger ist. Dauerhaft eingesetzt schaden beide Stile.",
+        "example": "Die Icon-Farbe ist unwichtig, der Release nicht. Bewusstes Vermeiden spart hier Zeit und Nerven."
+      },
+      "checkpoints": [
+        {
+          "question": "Ein Kollege möchte unbedingt den Fensterplatz, dir ist der Platz egal. Welcher Stil passt?",
+          "answers": ["Entgegenkommen", "Konkurrieren", "Zusammenarbeiten"],
+          "correct_index": 0,
+          "explanation": "Wenn dir das Thema wenig bedeutet, der anderen Person aber viel, ist Entgegenkommen sinnvoll – und stärkt die Beziehung."
+        }
+      ]
+    },
+
+    {
+      "id": "conflict_01",
+      "_source": "ANF – wörtlich aus konfliktspiel_anforderungen.md, Abschnitt 8",
+      "npc": { "id": "lena", "name": "Lena", "role": "Entwicklerin" },
+      "situation": "Lena verschiebt seit zwei Wochen Termine und reagiert auf Nachfragen gereizt.",
+      "options": [
+        { "text": "Ich mache dir Vorwürfe und fordere Pünktlichkeit.", "consequence": "Lena zieht sich zurück. Das Problem bleibt.", "correct": false },
+        { "text": "Ich frage nach, was hinter den Verschiebungen steckt.", "consequence": "Lena nennt eine Überlastung. Ihr könnt gemeinsam nach einer Lösung suchen.", "correct": true }
+      ],
+      "theory": {
+        "model": "Interessen statt Positionen",
+        "summary": "Hinter einer Position steht ein Interesse. Fragen nach dem Warum bringen es ans Licht.",
+        "example": "Lena will weniger Termine. Ihr eigentliches Interesse ist eine realistische Arbeitslast."
+      },
+      "checkpoints": [
+        {
+          "question": "Welche Aussage beschreibt ein Interesse statt einer Position?",
+          "answers": ["Ich will sofort einen Termin.", "Ich brauche einen verlässlichen Zeitplan.", "Ich will recht haben."],
+          "correct_index": 1,
+          "explanation": "Ein Interesse beschreibt das Bedürfnis hinter einer Forderung."
+        }
+      ]
+    },
+    {
+      "id": "c4_2",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "robert", "name": "Robert", "role": "Senior-Entwickler" },
+      "situation": "Robert kritisiert im Code-Review Annas Arbeit scharf: „Typisch, du denkst einfach nie mit.“ Anna ist verletzt, und der eigentliche Fehler im Code geht im Streit unter.",
+      "options": [
+        { "text": "Ich sage Anna, sie soll nicht so empfindlich sein.", "consequence": "Anna fühlt sich allein gelassen. Sie traut sich in Reviews nichts mehr zu sagen.", "correct": false },
+        { "text": "Ich trenne die Ebenen: Zuerst klären wir den Fehler sachlich, danach spreche ich mit Robert über seine Wortwahl.", "consequence": "Der Fehler ist schnell behoben. Robert sieht ein, dass sein Ton verletzend war, und entschuldigt sich.", "correct": true },
+        { "text": "Ich verbiete Robert, weiter Reviews zu machen.", "consequence": "Robert fühlt sich bestraft, und dem Team fehlt seine Erfahrung.", "correct": false }
+      ],
+      "theory": {
+        "model": "Harvard: Menschen und Probleme getrennt behandeln",
+        "summary": "Das Harvard-Konzept (Fisher, Ury, Patton) ist eine Methode für sachgerechtes Verhandeln. Erstes Prinzip: Menschen und Probleme getrennt behandeln – hart in der Sache, respektvoll zu den Menschen. Persönliche Angriffe vergiften die Lösung des Sachproblems.",
+        "example": "Der Fehler im Code ist das Problem, nicht Anna als Person."
+      },
+      "checkpoints": [
+        {
+          "question": "Was bedeutet „Menschen und Probleme getrennt behandeln“?",
+          "answers": ["Probleme nur noch schriftlich besprechen", "Hart in der Sache, respektvoll zur Person", "Konflikte ohne die Betroffenen lösen"],
+          "correct_index": 1,
+          "explanation": "Das Sachproblem wird klar benannt, ohne die Person anzugreifen."
+        }
+      ]
+    },
+    {
+      "id": "c4_3",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "carla", "name": "Carla", "role": "Marketing-Leiterin" },
+      "situation": "Carla braucht den Launch zur Fachmesse im Mai. Das Entwicklungsteam sagt: „Vor Juli ist das nicht machbar.“ Beide beharren auf ihrem Datum.",
+      "options": [
+        { "text": "Wir nehmen einfach die Mitte: Launch im Juni.", "consequence": "Juni verpasst die Messe und setzt das Team trotzdem unter Druck. Niemand ist zufrieden.", "correct": false },
+        { "text": "Wir sammeln zuerst ohne Bewertung möglichst viele Optionen, zum Beispiel eine Demo-Version für die Messe und den vollen Launch im Juli.", "consequence": "Carla bekommt einen starken Messeauftritt mit Demo, das Team hat Zeit bis Juli. Beide gewinnen.", "correct": true },
+        { "text": "Die Entwicklung muss sich nach dem Marketing richten.", "consequence": "Das Team arbeitet unter Hochdruck, die Qualität leidet, und der Launch auf der Messe geht schief.", "correct": false }
+      ],
+      "theory": {
+        "model": "Harvard: Optionen zum beiderseitigen Vorteil entwickeln",
+        "summary": "Statt sich früh auf eine Lösung festzulegen, werden zuerst möglichst viele Möglichkeiten gesammelt – erst erfinden, dann bewerten. So entstehen Lösungen, von denen beide Seiten profitieren, statt nur den „Kuchen“ zu teilen.",
+        "example": "Mai oder Juli waren Positionen. Carlas Interesse ist ein Messeauftritt, das des Teams eine machbare Planung – die Demo erfüllt beides."
+      },
+      "checkpoints": [
+        {
+          "question": "Wie entstehen nach dem Harvard-Konzept gute Optionen?",
+          "answers": ["Indem man den ersten Vorschlag sofort umsetzt", "Indem man zuerst sammelt und erst danach bewertet", "Indem die ranghöchste Person entscheidet"],
+          "correct_index": 1,
+          "explanation": "Wer das Erfinden vom Bewerten trennt, findet mehr und kreativere Lösungen."
+        }
+      ]
+    },
+    {
+      "id": "c4_4",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "huber", "name": "Herr Huber", "role": "Software-Lieferant" },
+      "situation": "Herr Huber verlangt für die Lizenzverlängerung 40 % mehr. „Friss oder stirb“, sagt er. Ihr seid aber nicht auf ihn angewiesen: Ein anderer Anbieter hat bereits ein Angebot gemacht.",
+      "options": [
+        { "text": "Ich akzeptiere sofort, damit keine Lücke entsteht.", "consequence": "Das Budget ist stark belastet. Herr Huber merkt sich, dass Druck bei euch funktioniert.", "correct": false },
+        { "text": "Ich schlage Marktpreise vergleichbarer Lizenzen als Maßstab vor und kenne meine Alternative: das Angebot des anderen Anbieters.", "consequence": "Herr Huber sieht, dass sein Preis über dem Markt liegt und ihr eine Alternative habt. Ihr einigt euch auf eine Erhöhung von 8 %.", "correct": true },
+        { "text": "Ich breche das Gespräch wütend ab.", "consequence": "Die Beziehung ist beschädigt, und ein Wechsel kostet mehr Zeit als nötig.", "correct": false }
+      ],
+      "theory": {
+        "model": "Harvard: Objektive Kriterien und BATNA",
+        "summary": "Viertes Prinzip: Ergebnisse auf neutrale, objektive Kriterien stützen – z. B. Marktpreise, Normen oder Gutachten – statt auf Druck. Zur Vorbereitung gehört die BATNA (Best Alternative To a Negotiated Agreement): die beste Alternative, falls keine Einigung zustande kommt. Wer seine BATNA kennt, verhandelt sicherer.",
+        "example": "Marktpreise sind das objektive Kriterium, das Angebot des anderen Anbieters ist die BATNA."
+      },
+      "checkpoints": [
+        {
+          "question": "Was ist eine BATNA?",
+          "answers": ["Ein Vertrag mit Strafzahlungen", "Die erste Forderung in einer Verhandlung", "Die beste Alternative, falls keine Einigung zustande kommt"],
+          "correct_index": 2,
+          "explanation": "Die BATNA zeigt, ab wann ein Angebot schlechter ist als die eigene Alternative – und gibt Sicherheit in der Verhandlung."
+        }
+      ]
+    },
+
+    {
+      "id": "c5_1",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "meier", "name": "Frau Meier", "role": "Auftraggeberin" },
+      "situation": "Frau Meier möchte drei zusätzliche Funktionen – zum selben Termin und ohne zusätzliches Budget. Das Team ist bereits voll ausgelastet.",
+      "options": [
+        { "text": "Ich sage zu allem Ja, um sie nicht zu verärgern.", "consequence": "Das Team arbeitet am Limit, die Qualität sinkt, und der Termin platzt trotzdem.", "correct": false },
+        { "text": "Ich zeige ihr den Zusammenhang von Leistung, Zeit und Kosten und lege Varianten zur Entscheidung vor.", "consequence": "Frau Meier entscheidet bewusst: Eine Funktion kommt jetzt, zwei folgen in einer zweiten Projektphase.", "correct": true },
+        { "text": "Ich lehne jede Änderung kategorisch ab.", "consequence": "Frau Meier fühlt sich nicht ernst genommen und wendet sich direkt an deinen Vorgesetzten.", "correct": false }
+      ],
+      "theory": {
+        "model": "Zielkonflikt im magischen Dreieck",
+        "summary": "Im Projekt hängen Leistung (Umfang, Qualität), Zeit und Kosten zusammen: Ändert sich eine Größe, sind die anderen betroffen. Ein Zielkonflikt entsteht, wenn Ziele sich gegenseitig behindern. Transparenz über die Auswirkungen und eine bewusste Entscheidung der Auftraggeberseite helfen.",
+        "example": "Mehr Leistung bei gleicher Zeit und gleichen Kosten ist ein klassischer Zielkonflikt."
+      },
+      "checkpoints": [
+        {
+          "question": "Die Auftraggeberin will mehr Leistung bei gleicher Zeit und gleichem Budget. Was ist ein guter erster Schritt?",
+          "answers": ["Heimlich Überstunden einplanen", "Die Auswirkungen transparent machen und Varianten zur Entscheidung vorlegen", "Die Anfrage ignorieren"],
+          "correct_index": 1,
+          "explanation": "Die Auftraggeberin soll auf Basis klarer Informationen selbst entscheiden, was ihr wichtiger ist."
+        }
+      ]
+    },
+    {
+      "id": "c5_2",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "thomas", "name": "Thomas", "role": "Leiter IT-Betrieb" },
+      "situation": "Thomas zieht zwei deiner Entwickler für eine dringende Aufgabe im Tagesgeschäft ab. „Der Betrieb geht vor“, sagt er. Ohne die beiden verzögert sich dein Projekt.",
+      "options": [
+        { "text": "Ich gehe sofort zur Geschäftsleitung.", "consequence": "Thomas fühlt sich hintergangen. Die Zusammenarbeit zwischen Projekt und Linie leidet langfristig.", "correct": false },
+        { "text": "Ich kläre mit Thomas, was genau gebraucht wird, zeige die Folgen fürs Projekt und suche mit ihm eine Lösung. Erst wenn das scheitert, nutze ich den vereinbarten Eskalationsweg.", "consequence": "Ihr einigt euch: Ein Entwickler bleibt im Projekt, der zweite hilft eine Woche im Betrieb aus.", "correct": true },
+        { "text": "Ich akzeptiere es kommentarlos.", "consequence": "Der Projekttermin platzt. Die Auftraggeberin fragt, warum du nichts gesagt hast.", "correct": false }
+      ],
+      "theory": {
+        "model": "Verteilungskonflikt und Eskalationsweg",
+        "summary": "Ein Verteilungskonflikt entsteht, wenn knappe Ressourcen wie Personal, Budget, Räume oder Zeit von mehreren beansprucht werden. In der Matrixorganisation treffen dabei oft Projekt und Linie aufeinander. Zuerst direkt klären, dann den im Projekt festgelegten Eskalationsweg (z. B. Lenkungsausschuss) nutzen.",
+        "example": "Projekt und Betrieb brauchen dieselben Personen – ein typischer Verteilungskonflikt."
+      },
+      "checkpoints": [
+        {
+          "question": "Was ist bei einem Ressourcenkonflikt mit der Linie der richtige erste Schritt?",
+          "answers": ["Sofort die Geschäftsleitung einschalten", "Das direkte Gespräch suchen und die Folgen aufzeigen", "Die Mitarbeitenden heimlich weiter einplanen"],
+          "correct_index": 1,
+          "explanation": "Erst direkt klären, dann eskalieren. Wer sofort eskaliert, beschädigt die Zusammenarbeit."
+        }
+      ]
+    },
+    {
+      "id": "c5_3",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "schneider", "name": "Herr Schneider", "role": "Leiter Kundendienst" },
+      "situation": "Herr Schneider blockiert die Einführung des neuen Ticketsystems. In Meetings äußert er nur Bedenken, und Termine mit seinem Team sagt er kurzfristig ab.",
+      "options": [
+        { "text": "Ich plane einfach ohne ihn weiter.", "consequence": "Bei der Einführung boykottiert sein Team das System. Kaum jemand nutzt es.", "correct": false },
+        { "text": "Ich frage nach seinen Befürchtungen und beziehe ihn und sein Team früh in die Gestaltung ein.", "consequence": "Er befürchtet Mehrarbeit während der Umstellung. Gemeinsam plant ihr Schulungen und eine Übergangsphase. Aus dem Gegner wird ein Unterstützer.", "correct": true },
+        { "text": "Ich beschwere mich bei seiner Vorgesetzten über ihn.", "consequence": "Herr Schneider fühlt sich angegriffen. Sein Widerstand wird stärker und offener.", "correct": false }
+      ],
+      "theory": {
+        "model": "Stakeholder-Konflikte",
+        "summary": "Stakeholder sind alle Personen und Gruppen, die vom Projekt betroffen sind oder es beeinflussen. Widerstand entsteht oft aus Sorgen, z. B. vor Mehrarbeit, Machtverlust oder Unsicherheit. Eine Stakeholder-Analyse (Einfluss und Haltung) und eine frühe Einbindung verhindern viele Konflikte.",
+        "example": "Herr Schneider hat großen Einfluss und eine kritische Haltung – er sollte eng eingebunden werden."
+      },
+      "checkpoints": [
+        {
+          "question": "Ein einflussreicher Stakeholder steht dem Projekt kritisch gegenüber. Was ist sinnvoll?",
+          "answers": ["Ihn möglichst wenig informieren", "Ihn früh einbinden und seine Sorgen ernst nehmen", "Das Projekt sofort stoppen"],
+          "correct_index": 1,
+          "explanation": "Einflussreiche Kritiker sollten aktiv eingebunden werden. So werden ihre Sorgen sichtbar und können gelöst werden."
+        }
+      ]
+    },
+    {
+      "id": "c5_4",
+      "_review": "ERGÄNZT – fachlich prüfen",
+      "npc": { "id": "julia", "name": "Julia", "role": "neue Projektleiterin" },
+      "situation": "Julia startet nächste Woche ein Projekt mit Leuten aus drei Abteilungen. Sie fragt dich: „Wie verhindere ich, dass es bei uns auch so knallt?“",
+      "options": [
+        { "text": "„Konflikte kann man nicht verhindern, lass es einfach laufen.“", "consequence": "Ohne gemeinsame Regeln entstehen schnell Missverständnisse über Ziele und Zuständigkeiten.", "correct": false },
+        { "text": "„Legt im Kick-off gemeinsam Ziele, Rollen, Kommunikations- und Entscheidungsregeln fest und plant regelmäßige Retrospektiven ein.“", "consequence": "Julias Team startet mit klaren Spielregeln. Spannungen werden in den Retrospektiven früh angesprochen.", "correct": true },
+        { "text": "„Sprich kritische Themen im Team möglichst nicht an.“", "consequence": "Probleme bleiben unter der Oberfläche und brechen später umso heftiger aus.", "correct": false }
+      ],
+      "theory": {
+        "model": "Konfliktprävention im Projekt",
+        "summary": "Viele Projektkonflikte entstehen aus unklaren Zielen, Rollen und Regeln. Ein Kick-off mit klaren Zielen, Rollen, Kommunikations- und Entscheidungsregeln sowie regelmäßige Retrospektiven helfen, Spannungen früh zu erkennen. Ziel ist nicht, Konflikte ganz zu vermeiden, sondern sie früh und konstruktiv zu bearbeiten.",
+        "example": "Klare Spielregeln vom ersten Tag an hätten viele Konflikte in diesem Büro verhindert."
+      },
+      "checkpoints": [
+        {
+          "question": "Welche Maßnahme beugt Konflikten im Projekt am besten vor?",
+          "answers": ["Klare Ziele, Rollen und Regeln im Kick-off vereinbaren", "Möglichst wenig miteinander sprechen", "Alle Entscheidungen allein treffen"],
+          "correct_index": 0,
+          "explanation": "Klarheit über Ziele, Rollen und Regeln nimmt vielen Konflikten den Nährboden."
+        }
+      ]
+    }
+  ]
+}

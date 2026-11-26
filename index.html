@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Der Streit um 9 Uhr</title>
+  <meta name="description" content="Lernspiel zum Konfliktmanagement im Projektumfeld (HWZ, Modul Projektmanagement).">
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0b1020; color: #ffffff; font-family: system-ui, sans-serif; }
+    /* The game fills the whole window; Phaser's RESIZE mode follows this element. */
+    #game { position: fixed; inset: 0; width: 100vw; height: 100vh; }
+    #game:fullscreen { width: 100%; height: 100%; }
+    #game canvas { display: block; outline: none; }
+    noscript p { padding: 2rem; font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+  <noscript><p>Dieses Lernspiel benötigt JavaScript. Bitte aktiviere JavaScript in deinem Browser.</p></noscript>
+  <div id="game" role="application" aria-label="Lernspiel: Der Streit um 9 Uhr. Steuerung per Tastatur."></div>
+  <script src="lib/phaser.min.js"></script>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

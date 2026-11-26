@@ -1,0 +1,122 @@
+[
+  {
+    "id": 0,
+    "name": "floor",
+    "collides": false
+  },
+  {
+    "id": 1,
+    "name": "wall_top",
+    "collides": true
+  },
+  {
+    "id": 2,
+    "name": "wall_front",
+    "collides": true
+  },
+  {
+    "id": 3,
+    "name": "window",
+    "collides": true
+  },
+  {
+    "id": 4,
+    "name": "whiteboard",
+    "collides": true
+  },
+  {
+    "id": 5,
+    "name": "desk",
+    "collides": true
+  },
+  {
+    "id": 6,
+    "name": "chair",
+    "collides": true
+  },
+  {
+    "id": 7,
+    "name": "plant",
+    "collides": true
+  },
+  {
+    "id": 8,
+    "name": "shelf",
+    "collides": true
+  },
+  {
+    "id": 9,
+    "name": "door_closed",
+    "collides": true
+  },
+  {
+    "id": 10,
+    "name": "door_open",
+    "collides": false
+  },
+  {
+    "id": 11,
+    "name": "corridor",
+    "collides": false
+  },
+  {
+    "id": 12,
+    "name": "carpet",
+    "collides": false
+  },
+  {
+    "id": 13,
+    "name": "kitchen",
+    "collides": false
+  },
+  {
+    "id": 14,
+    "name": "dark_floor",
+    "collides": false
+  },
+  {
+    "id": 15,
+    "name": "table",
+    "collides": true
+  },
+  {
+    "id": 16,
+    "name": "counter",
+    "collides": true
+  },
+  {
+    "id": 17,
+    "name": "coffee_machine",
+    "collides": true
+  },
+  {
+    "id": 18,
+    "name": "fridge",
+    "collides": true
+  },
+  {
+    "id": 19,
+    "name": "sofa",
+    "collides": true
+  },
+  {
+    "id": 20,
+    "name": "flipchart",
+    "collides": true
+  },
+  {
+    "id": 21,
+    "name": "clock",
+    "collides": true
+  },
+  {
+    "id": 22,
+    "name": "water_cooler",
+    "collides": true
+  },
+  {
+    "id": 23,
+    "name": "exit_sign",
+    "collides": true
+  }
+]

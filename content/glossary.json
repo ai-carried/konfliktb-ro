@@ -1,0 +1,38 @@
+{
+  "_info": "Glossar. Jeder Eintrag ist eine Konfliktkarte, die im Raum des angegebenen Kapitels liegt (max. 6 pro Kapitel).",
+  "_review": "ERGÄNZT – alle Definitionen fachlich prüfen und mit der Kursliteratur abgleichen.",
+  "entries": [
+    { "id": "konflikt", "chapter": 1, "term": "Sozialer Konflikt", "definition": "Eine Spannung zwischen mindestens zwei Parteien, die unvereinbare Ziele, Interessen oder Sichtweisen haben, wobei sich mindestens eine Partei durch die andere beeinträchtigt fühlt." },
+    { "id": "signale", "chapter": 1, "term": "Konfliktsignale", "definition": "Hinweise auf einen (oft noch verdeckten) Konflikt, z. B. Rückzug, Schweigen, Gereiztheit, Unpünktlichkeit, knappe Kommunikation, Gerüchte oder Grüppchenbildung." },
+    { "id": "sachkonflikt", "chapter": 1, "term": "Sachkonflikt", "definition": "Unterschiedliche Meinungen über Inhalte, Methoden oder Lösungen. Lässt sich meist mit Fakten, Kriterien und offener Diskussion klären." },
+    { "id": "beziehungskonflikt", "chapter": 1, "term": "Beziehungskonflikt", "definition": "Konflikt auf der persönlichen Ebene, z. B. durch fehlende Wertschätzung, Misstrauen oder Kränkungen. Sachargumente allein lösen ihn nicht." },
+    { "id": "rollenkonflikt", "chapter": 1, "term": "Rollenkonflikt", "definition": "Entsteht, wenn Aufgaben, Kompetenzen oder Erwartungen an eine Rolle unklar oder widersprüchlich sind." },
+
+    { "id": "glasl", "chapter": 2, "term": "Eskalationsmodell nach Glasl", "definition": "Beschreibt neun Eskalationsstufen in drei Ebenen: Ebene 1 (Stufen 1–3) win-win, Ebene 2 (Stufen 4–6) win-lose, Ebene 3 (Stufen 7–9) lose-lose." },
+    { "id": "glasl_e1", "chapter": 2, "term": "Glasl Ebene 1 (Stufen 1–3)", "definition": "1 Verhärtung, 2 Debatte und Polemik, 3 Taten statt Worte. Eine Win-win-Lösung ist noch möglich; oft reicht Selbsthilfe oder Moderation." },
+    { "id": "glasl_e2", "chapter": 2, "term": "Glasl Ebene 2 (Stufen 4–6)", "definition": "4 Images und Koalitionen, 5 Gesichtsverlust, 6 Drohstrategien. Es geht ums Gewinnen (win-lose); eine neutrale dritte Partei wie Mediation ist sinnvoll." },
+    { "id": "glasl_e3", "chapter": 2, "term": "Glasl Ebene 3 (Stufen 7–9)", "definition": "7 Begrenzte Vernichtungsschläge, 8 Zersplitterung, 9 Gemeinsam in den Abgrund. Beide verlieren (lose-lose); oft helfen nur Schiedsverfahren oder ein Machteingriff." },
+    { "id": "mediation", "chapter": 2, "term": "Mediation", "definition": "Strukturiertes Verfahren, in dem eine neutrale dritte Person die Konfliktparteien dabei unterstützt, selbst eine Lösung zu erarbeiten." },
+
+    { "id": "tki", "chapter": 3, "term": "Thomas-Kilmann-Modell", "definition": "Ordnet fünf Konfliktstile nach zwei Dimensionen: Durchsetzung (eigene Anliegen) und Kooperation (Anliegen der anderen)." },
+    { "id": "konkurrieren", "chapter": 3, "term": "Konkurrieren", "definition": "Hohe Durchsetzung, wenig Kooperation. Passend bei dringenden Entscheidungen oder wenn wichtige Werte wie Sicherheit auf dem Spiel stehen." },
+    { "id": "zusammenarbeiten", "chapter": 3, "term": "Zusammenarbeiten", "definition": "Hohe Durchsetzung, hohe Kooperation. Gemeinsame Suche nach einer Lösung, die alle Anliegen erfüllt (win-win). Braucht Zeit und Vertrauen." },
+    { "id": "kompromiss", "chapter": 3, "term": "Kompromiss", "definition": "Mittlere Durchsetzung, mittlere Kooperation. Jede Seite gibt etwas auf. Passend bei Zeitdruck und gleich starken Parteien." },
+    { "id": "vermeiden", "chapter": 3, "term": "Vermeiden", "definition": "Wenig Durchsetzung, wenig Kooperation. Das Thema wird bewusst nicht (oder später) bearbeitet. Sinnvoll bei unwichtigen Themen oder zum Abkühlen." },
+    { "id": "entgegenkommen", "chapter": 3, "term": "Entgegenkommen", "definition": "Wenig Durchsetzung, hohe Kooperation. Man stellt die eigenen Anliegen zurück, z. B. wenn das Thema der anderen Seite viel wichtiger ist." },
+
+    { "id": "harvard", "chapter": 4, "term": "Harvard-Konzept", "definition": "Methode des sachgerechten Verhandelns (Fisher, Ury, Patton) mit vier Prinzipien: Menschen und Probleme trennen, Interessen statt Positionen, Optionen entwickeln, objektive Kriterien anwenden." },
+    { "id": "position", "chapter": 4, "term": "Position", "definition": "Die konkrete Forderung oder der Standpunkt, den eine Partei einnimmt („Ich will …“)." },
+    { "id": "interesse", "chapter": 4, "term": "Interesse", "definition": "Das Bedürfnis, die Sorge oder das Motiv hinter einer Position („Warum will ich das?“)." },
+    { "id": "optionen", "chapter": 4, "term": "Optionen entwickeln", "definition": "Vor der Entscheidung möglichst viele Lösungsmöglichkeiten sammeln, ohne sie sofort zu bewerten – mit dem Ziel eines beiderseitigen Vorteils." },
+    { "id": "kriterien", "chapter": 4, "term": "Objektive Kriterien", "definition": "Neutrale Maßstäbe wie Marktpreise, Normen, Gutachten oder Daten, auf die sich eine Einigung stützt – statt auf Druck." },
+    { "id": "batna", "chapter": 4, "term": "BATNA", "definition": "Best Alternative To a Negotiated Agreement: die beste Alternative, falls keine Einigung zustande kommt. Sie bestimmt, wann man eine Verhandlung besser abbricht." },
+
+    { "id": "stakeholder", "chapter": 5, "term": "Stakeholder", "definition": "Alle Personen und Gruppen, die vom Projekt betroffen sind oder es beeinflussen können, z. B. Auftraggeberin, Nutzende, Linie oder Lieferanten." },
+    { "id": "dreieck", "chapter": 5, "term": "Magisches Dreieck", "definition": "Zusammenhang von Leistung (Umfang, Qualität), Zeit und Kosten im Projekt. Ändert sich eine Größe, beeinflusst das die anderen." },
+    { "id": "zielkonflikt", "chapter": 5, "term": "Zielkonflikt", "definition": "Ziele behindern sich gegenseitig, z. B. mehr Leistung bei gleicher Zeit und gleichem Budget." },
+    { "id": "verteilungskonflikt", "chapter": 5, "term": "Verteilungskonflikt", "definition": "Mehrere Parteien beanspruchen dieselben knappen Ressourcen wie Personal, Budget, Räume oder Zeit." },
+    { "id": "eskalationsweg", "chapter": 5, "term": "Eskalationsweg", "definition": "Im Projekt vereinbarter Weg, wie ein ungelöster Konflikt an die nächsthöhere Ebene (z. B. Lenkungsausschuss) weitergegeben wird." },
+    { "id": "retrospektive", "chapter": 5, "term": "Retrospektive", "definition": "Regelmäßiger Rückblick im Team: Was lief gut, was nicht, was ändern wir? Hilft, Spannungen früh anzusprechen." }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "_info": "Kapitel in Spielreihenfolge. Jedes Kapitel = ein Raum der Karte (Raum 1 bis 5). 'conflicts' bestimmt Reihenfolge und Zuordnung der Personen im Raum (max. 4). 'checkpoint' sind die Fragen an der Kapiteltür.",
+  "_review": "ERGÄNZT – Titel, Einleitungen und Checkpoint-Fragen fachlich prüfen. Die Lernziele stammen aus den Anforderungen (Abschnitt 3).",
+  "learning_goals": {
+    "1": "Eskalationsstufen nach Glasl einordnen",
+    "2": "Konfliktstile nach Thomas-Kilmann wählen",
+    "3": "Interessen von Positionen unterscheiden (Harvard)",
+    "4": "Konfliktsignale erkennen",
+    "5": "Konflikte im Projektkontext einordnen"
+  },
+  "chapters": [
+    {
+      "id": "ch1",
+      "number": 1,
+      "title": "Konflikte erkennen",
+      "room": "Teambüro",
+      "learning_goal": 4,
+      "intro": "Montag, 9 Uhr im Teambüro. Die Stimmung ist angespannt, aber niemand sagt offen, was los ist. Lerne, Konfliktsignale zu erkennen und Konfliktarten zu unterscheiden.",
+      "conflicts": ["c1_1", "c1_2", "c1_3", "c1_4"],
+      "checkpoint": [
+        {
+          "question": "Zwei Entwickler streiten, welches Framework für das Projekt besser geeignet ist. Welche Konfliktart ist das?",
+          "answers": ["Beziehungskonflikt", "Sachkonflikt", "Rollenkonflikt"],
+          "correct_index": 1,
+          "explanation": "Es geht um eine inhaltliche Frage (Methode, Lösung). Das ist ein Sachkonflikt, der sich mit Kriterien und Fakten klären lässt."
+        },
+        {
+          "question": "Welches Verhalten ist KEIN typisches Konfliktsignal?",
+          "answers": ["Gereizte Reaktionen auf Nachfragen", "Gerüchte und Grüppchenbildung", "Offene, sachliche Rückfragen zu einer Aufgabe"],
+          "correct_index": 2,
+          "explanation": "Sachliche Rückfragen gehören zu guter Zusammenarbeit. Gereiztheit, Gerüchte und Grüppchenbildung sind dagegen typische Signale."
+        },
+        {
+          "question": "Warum lohnt es sich, Konflikte früh anzusprechen?",
+          "answers": ["Weil sie in frühen Phasen meist noch gut lösbar sind.", "Weil Konflikte sonst immer von allein verschwinden.", "Weil man so schneller einen Schuldigen findet."],
+          "correct_index": 0,
+          "explanation": "Je früher ein Konflikt angesprochen wird, desto weniger ist er eskaliert und desto leichter finden die Beteiligten selbst eine Lösung."
+        }
+      ]
+    },
+    {
+      "id": "ch2",
+      "number": 2,
+      "title": "Eskalation verstehen",
+      "room": "Besprechungsraum",
+      "learning_goal": 1,
+      "intro": "Im Besprechungsraum fliegen die Fetzen. Manche Konflikte sind schon weit fortgeschritten. Mit dem Modell von Friedrich Glasl ordnest du ein, wie stark ein Konflikt eskaliert ist und welche Hilfe passt.",
+      "conflicts": ["c2_1", "c2_2", "c2_3", "c2_4"],
+      "checkpoint": [
+        {
+          "question": "Wie viele Eskalationsstufen unterscheidet Glasl?",
+          "answers": ["5", "7", "9"],
+          "correct_index": 2,
+          "explanation": "Glasl unterscheidet 9 Stufen, gruppiert in 3 Ebenen zu je 3 Stufen."
+        },
+        {
+          "question": "Eine Partei stellt die andere vor allen bloß, um sie unglaubwürdig zu machen. Welche Stufe ist das?",
+          "answers": ["Stufe 2: Debatte und Polemik", "Stufe 5: Gesichtsverlust", "Stufe 8: Zersplitterung"],
+          "correct_index": 1,
+          "explanation": "Auf Stufe 5 (Gesichtsverlust) versuchen die Parteien, die Gegenseite öffentlich bloßzustellen und moralisch abzuwerten."
+        },
+        {
+          "question": "Welche Ebene beschreibt eine Lose-lose-Situation?",
+          "answers": ["Ebene 1 (Stufen 1–3)", "Ebene 2 (Stufen 4–6)", "Ebene 3 (Stufen 7–9)"],
+          "correct_index": 2,
+          "explanation": "Auf Ebene 3 nehmen beide Seiten eigenen Schaden in Kauf, solange der Gegner mehr verliert: Am Ende verlieren alle."
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "number": 3,
+      "title": "Konfliktstile",
+      "room": "Kaffeeküche",
+      "learning_goal": 2,
+      "intro": "In der Kaffeeküche hört man viel – und jede Person geht anders mit Konflikten um. Das Thomas-Kilmann-Modell beschreibt fünf Konfliktstile. Wähle den Stil, der zur Situation passt.",
+      "conflicts": ["c3_1", "c3_2", "c3_3", "c3_4"],
+      "checkpoint": [
+        {
+          "question": "Welche zwei Dimensionen nutzt das Thomas-Kilmann-Modell?",
+          "answers": ["Durchsetzung und Kooperation", "Zeit und Kosten", "Erfahrung und Hierarchie"],
+          "correct_index": 0,
+          "explanation": "Die Stile unterscheiden sich darin, wie stark man die eigenen Anliegen durchsetzt (Durchsetzung) und wie stark man auf die Anliegen der anderen eingeht (Kooperation)."
+        },
+        {
+          "question": "Welcher Stil verbindet hohe Kooperation mit wenig Durchsetzung?",
+          "answers": ["Vermeiden", "Entgegenkommen", "Konkurrieren"],
+          "correct_index": 1,
+          "explanation": "Beim Entgegenkommen stellt man die eigenen Anliegen zurück und erfüllt die der anderen Seite."
+        },
+        {
+          "question": "Welche Aussage zum Thomas-Kilmann-Modell stimmt?",
+          "answers": ["Ein Stil ist immer der beste.", "Der passende Stil hängt von der Situation ab.", "Vermeiden ist immer falsch."],
+          "correct_index": 1,
+          "explanation": "Jeder Stil hat Situationen, in denen er sinnvoll ist. Wichtig ist, bewusst zu wählen statt immer gleich zu reagieren."
+        }
+      ]
+    },
+    {
+      "id": "ch4",
+      "number": 4,
+      "title": "Verhandeln nach dem Harvard-Konzept",
+      "room": "Projektleitungsbüro",
+      "learning_goal": 3,
+      "intro": "Im Büro der Projektleitung wird verhandelt. Das Harvard-Konzept zeigt, wie man hart in der Sache und fair zu den Menschen verhandelt – und warum es sich lohnt, hinter die Positionen zu schauen.",
+      "conflicts": ["conflict_01", "c4_2", "c4_3", "c4_4"],
+      "checkpoint": [
+        {
+          "question": "Welches ist KEIN Prinzip des Harvard-Konzepts?",
+          "answers": ["Auf Interessen konzentrieren, nicht auf Positionen", "Den Druck erhöhen, bis die Gegenseite nachgibt", "Objektive Kriterien anwenden"],
+          "correct_index": 1,
+          "explanation": "Das Harvard-Konzept setzt auf sachgerechtes Verhandeln. Druck und Willenskraft sollen gerade durch Interessen, Optionen und objektive Kriterien ersetzt werden."
+        },
+        {
+          "question": "„Ich will ein Einzelbüro.“ Was ist das?",
+          "answers": ["Eine Position", "Ein Interesse", "Eine BATNA"],
+          "correct_index": 0,
+          "explanation": "Das ist eine Position, also eine konkrete Forderung. Das Interesse dahinter könnte z. B. Ruhe zum konzentrierten Arbeiten sein."
+        },
+        {
+          "question": "Warum sammelt man zuerst Optionen, bevor man sie bewertet?",
+          "answers": ["Damit mehr und kreativere Lösungen entstehen", "Damit die Verhandlung länger dauert", "Damit man die Gegenseite verwirrt"],
+          "correct_index": 0,
+          "explanation": "Wer Erfinden und Bewerten trennt, findet mehr Möglichkeiten – auch solche, von denen beide Seiten profitieren."
+        }
+      ]
+    },
+    {
+      "id": "ch5",
+      "number": 5,
+      "title": "Konflikte im Projektkontext",
+      "room": "Raum der Auftraggeberin",
+      "learning_goal": 5,
+      "intro": "Im letzten Raum treffen Projekt, Linie, Stakeholder und Auftraggeberin aufeinander. Hier lernst du typische Projektkonflikte kennen und wie man sie strukturiert angeht.",
+      "conflicts": ["c5_1", "c5_2", "c5_3", "c5_4"],
+      "checkpoint": [
+        {
+          "question": "Zwei Projekte beanspruchen gleichzeitig denselben Experten. Welche Konfliktart ist das?",
+          "answers": ["Verteilungskonflikt", "Beziehungskonflikt", "Sachkonflikt"],
+          "correct_index": 0,
+          "explanation": "Wenn mehrere Parteien dieselbe knappe Ressource beanspruchen, spricht man von einem Verteilungskonflikt."
+        },
+        {
+          "question": "Welche drei Größen bilden das magische Dreieck im Projektmanagement?",
+          "answers": ["Leistung, Zeit, Kosten", "Team, Kunde, Lieferant", "Planung, Kontrolle, Abschluss"],
+          "correct_index": 0,
+          "explanation": "Leistung (Umfang und Qualität), Zeit und Kosten hängen voneinander ab. Ändert sich eine Größe, sind die anderen betroffen."
+        },
+        {
+          "question": "Wann sollte der formale Eskalationsweg (z. B. Lenkungsausschuss) genutzt werden?",
+          "answers": ["Sofort bei jeder Meinungsverschiedenheit", "Wenn die direkte Klärung zwischen den Beteiligten gescheitert ist", "Nie, er ist nur eine Formalität"],
+          "correct_index": 1,
+          "explanation": "Zuerst klären die Beteiligten direkt. Gelingt das nicht, wird nach dem vereinbarten Eskalationsweg die nächsthöhere Ebene einbezogen."
+        }
+      ]
+    }
+  ]
+}

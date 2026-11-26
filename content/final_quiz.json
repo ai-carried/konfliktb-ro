@@ -1,0 +1,64 @@
+{
+  "_info": "Abschlussquiz im Flur (F8). Jede Frage hat genau einen Versuch. 'learning_goal' verweist auf die Lernziele in chapters.json; jedes Lernziel wird mindestens einmal geprüft.",
+  "_review": "ERGÄNZT – Fragen fachlich prüfen",
+  "host": { "name": "Frau Berger", "role": "Bereichsleiterin" },
+  "intro": "Du hast alle Räume durchquert. Zeit für die Abschlussprüfung: 8 Fragen zu allen Kapiteln, jeweils mit einem Versuch.",
+  "questions": [
+    {
+      "learning_goal": 1,
+      "question": "Ein Team ist in zwei Lager gespalten, beide Seiten suchen Verbündete. Welche Glasl-Stufe ist das?",
+      "answers": ["Stufe 1: Verhärtung", "Stufe 4: Images und Koalitionen", "Stufe 9: Gemeinsam in den Abgrund"],
+      "correct_index": 1,
+      "explanation": "Lagerbildung und die Suche nach Verbündeten kennzeichnen Stufe 4 (Images und Koalitionen)."
+    },
+    {
+      "learning_goal": 1,
+      "question": "Auf welcher Ebene nach Glasl ist eine Win-win-Lösung noch realistisch?",
+      "answers": ["Ebene 1 (Stufen 1–3)", "Ebene 2 (Stufen 4–6)", "Ebene 3 (Stufen 7–9)"],
+      "correct_index": 0,
+      "explanation": "Nur auf Ebene 1 können noch beide Seiten gewinnen. Danach geht es um Gewinnen und Verlieren bzw. ums gemeinsame Verlieren."
+    },
+    {
+      "learning_goal": 2,
+      "question": "Beide Seiten haben wichtige Anliegen und genug Zeit für eine gemeinsame Lösung. Welcher Stil passt am besten?",
+      "answers": ["Vermeiden", "Entgegenkommen", "Zusammenarbeiten"],
+      "correct_index": 2,
+      "explanation": "Bei wichtigen Anliegen und genügend Zeit lohnt sich Zusammenarbeiten: Beide Anliegen werden möglichst voll erfüllt."
+    },
+    {
+      "learning_goal": 2,
+      "question": "Welcher Konfliktstil verbindet wenig Durchsetzung mit wenig Kooperation?",
+      "answers": ["Vermeiden", "Kompromiss", "Konkurrieren"],
+      "correct_index": 0,
+      "explanation": "Beim Vermeiden werden weder die eigenen noch die fremden Anliegen verfolgt – das Thema wird zurückgestellt."
+    },
+    {
+      "learning_goal": 3,
+      "question": "„Ich brauche planbare Arbeitszeiten, weil ich mein Kind abholen muss.“ Was beschreibt diese Aussage?",
+      "answers": ["Eine Position", "Ein Interesse", "Eine Drohung"],
+      "correct_index": 1,
+      "explanation": "Die Aussage nennt das Bedürfnis hinter einer möglichen Forderung (z. B. „keine Meetings nach 16 Uhr“) – also ein Interesse."
+    },
+    {
+      "learning_goal": 3,
+      "question": "Welches Vorgehen entspricht dem Harvard-Konzept?",
+      "answers": ["So lange drohen, bis die Gegenseite nachgibt", "Den Preis mit Marktvergleichen begründen", "Die Person angreifen, um die Sache zu gewinnen"],
+      "correct_index": 1,
+      "explanation": "Marktvergleiche sind objektive Kriterien. Drohungen und persönliche Angriffe widersprechen dem Harvard-Konzept."
+    },
+    {
+      "learning_goal": 4,
+      "question": "Welche Beobachtung deutet am ehesten auf einen verdeckten Konflikt hin?",
+      "answers": ["Das Team diskutiert offen über Alternativen.", "Eine Kollegin bittet um Feedback.", "Ein Kollege schweigt plötzlich in Meetings und meidet Gespräche."],
+      "correct_index": 2,
+      "explanation": "Plötzlicher Rückzug ist ein typisches Konfliktsignal. Offene Diskussion und Feedback sind Zeichen gesunder Zusammenarbeit."
+    },
+    {
+      "learning_goal": 5,
+      "question": "Projekt und Linie streiten um dieselben Mitarbeitenden, das direkte Gespräch ist gescheitert. Was ist der nächste Schritt?",
+      "answers": ["Den vereinbarten Eskalationsweg nutzen, z. B. den Lenkungsausschuss", "Die Mitarbeitenden selbst entscheiden lassen", "Das Projekt ohne Information an die Auftraggeberin verschieben"],
+      "correct_index": 0,
+      "explanation": "Ein Verteilungskonflikt, der sich nicht direkt lösen lässt, gehört über den vereinbarten Eskalationsweg an die nächsthöhere Ebene."
+    }
+  ]
+}
